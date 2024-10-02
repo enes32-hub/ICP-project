@@ -104,10 +104,10 @@ public func getMovieDetails(movieName: Text) : async Text {
   let removed = movieArchive.remove(movieName);
   switch (removed) {
     case (?name) {
-      return "Movie removed: " # movieName;
+      return "Film silindi: " # movieName;
     };
     case null {
-      return "Movie not found: " # movieName;
+      return "Film bulunamadı: " # movieName;
     };
   };
 };
